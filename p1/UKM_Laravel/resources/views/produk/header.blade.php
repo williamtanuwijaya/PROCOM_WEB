@@ -7,6 +7,3 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>HAI</h1>
-</body>
-</html>

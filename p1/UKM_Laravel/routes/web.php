@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\produk;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,9 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/produk', function () {
-    return view('Produk');
+// Route::get('/produk', function () {
+//     return view('Produk.master');
+// });
+Route::get('/header', function () {
+    return view('produkheader');
 });
-Route::get('/baru', function () {
-    return view('Baru');
-});
+
+Route::resource('/produk', produk::class);
