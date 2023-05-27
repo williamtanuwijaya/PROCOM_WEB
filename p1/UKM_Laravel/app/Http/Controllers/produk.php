@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 class produk extends Controller
 {
     public function index(){
-        return view('produk.master');
+        $makanan = "Nasi";
+        $minuman = "Teh";
+        return view('produk.master', compact('makanan', 'minuman'));
     }
 }
