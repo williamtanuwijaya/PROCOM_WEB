@@ -25,3 +25,8 @@ Route::get('/header', function () {
 });
 
 Route::resource('/produk', produk::class);
+
+Route::get('/post', function(){
+    return view('index');
+});
+
